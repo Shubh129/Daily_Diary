@@ -1,0 +1,54 @@
+            DATE :- 30 June 2025
+
+Hyperlinks & Linking in Websites
+
+🔹 What is a Website?
+- A website is a collection of interconnected content with navigation tools.
+
+🔹 Types of Links
+| Type     | Description                          |
+| -------- | ------------------------------------ |
+| External | Link to another website              |
+| Internal | Link to another page on same website |
+| Anchor   | Link to a section on the same page   |
+<a href="https://example.com" target="_blank" title="Visit site">External Link</a>
+<a href="page2.html">Internal Link</a>
+<a href="#top">Back to Top</a>   <!-- Anchor link -->
+
+🔹 Anchor Linking Use Cases
+-Table of Contents
+-FAQ sections
+-"Top of the page" links
+-Contact/About sections
+
+Images in HTML
+
+🔹 Why Use Images?
+-User-friendly interface
+-Information display (e.g. banners, logos, products)
+
+🔹 Image Tag Syntax
+<img src="image.jpg" alt="Description" width="400" height="300" title="Image Title" loading="lazy">
+
+| Attribute | Purpose                          |
+| --------- | -------------------------------- |
+| `src`     | Source of the image              |
+| `alt`     | Alternate text for accessibility |
+| `width`   | Width in pixels or %             |
+| `height`  | Height in pixels or %            |
+| `title`   | Tooltip text                     |
+| `loading` | Lazy (default) or eager loading  |
+
+Combining Links with Images
+<a href="product.html">
+  <img src="product.jpg" alt="Product">
+</a>
+
+Attributes for Links
+| Attribute  | Use                                     |
+| ---------- | --------------------------------------- |
+| `target`   | Where to open the link                  |
+| `href`     | URL of the link                         |
+| `title`    | Tooltip text                            |
+| `download` | Triggers file download                  |
+| `rel`      | SEO/security (`noopener`, `noreferrer`) |

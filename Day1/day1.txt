@@ -1,0 +1,52 @@
+            DATE :- 27 June 2025
+
+Frontend
+
+-Frontend development is the process of creating the part of a website or app that users see and interact with directly 
+
+Whenever you:
+
+-Click a button
+-Scroll a page
+-Fill a form
+-Hover over images
+→ That's frontend in action.
+
+Frontend Technologies
+
+| Language       | Purpose                          |
+| -------------- | -------------------------------- |
+| **HTML**       | Structure of the webpage         |
+| **CSS**        | Styling – colors, layout, fonts  |
+| **JavaScript** | Interactivity & dynamic behavior |
+
+
+HTML TAGS 
+
+🔹 Syntax
+<tagname>content</tagname>
+
+-Opening tag: <tagname>
+-Closing tag: </tagname>
+
+🔹 Basic Structure Tags
+
+<html>        <!-- Root of HTML document -->
+  <head>      <!-- Metadata: title, CSS, scripts -->
+    <title>My Website</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>      <!-- Main visible content -->
+    ...
+  </body>
+</html>
+
+Basic Tags
+
+🔹 Headings
+<h1> to <h6>      <!-- <h1> is largest, <h6> is smallest -->
+
+🔹 Paragraph & Line Break
+<p>This is a paragraph.</p>
+<br>    <!-- Line break -->
+<hr>    <!-- Horizontal rule/separator -->

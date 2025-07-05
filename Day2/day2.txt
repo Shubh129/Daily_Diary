@@ -1,0 +1,21 @@
+            DATE :- 28 June 2025
+
+Text Formatting Tags
+| Tag        | Description                  |
+| ---------- | ---------------------------- |
+| `<b>`      | Bold (non-semantic)          |
+| `<strong>` | Important text (semantic)    |
+| `<i>`      | Italic (non-semantic)        |
+| `<em>`     | Emphasized (semantic italic) |
+| `<small>`  | Smaller text                 |
+| `<del>`    | Deleted text (strikethrough) |
+| `<mark>`   | Highlighted text             |
+| `<ins>`    | Inserted (underlined) text   |
+| `<sup>`    | Superscript                  |
+| `<sub>`    | Subscript                    |
+
+Semantic Tags: These give meaning to the content.
+<strong>, <em>, <header>, <footer>, <nav>, <aside>
+
+Non-Semantic Tags: These are used for styling, without conveying meaning.
+<b>, <i>, <u>

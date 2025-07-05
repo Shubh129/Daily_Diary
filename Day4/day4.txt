@@ -1,0 +1,129 @@
+            DATE :- 1 July 2025
+
+🔹 Lists in HTML
+Lists are collections of related items, used to display information, group links, or images. They improve:
+-Readability
+-Structure
+-Organization
+
+🔸 Types of Lists
+1. Unordered List (<ul>)
+-Displays items with bullet points.
+-Commonly used when order doesn’t matter.
+
+Syntax:
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+-Attributes:
+  -type="circle" – ●
+  -type="square" – ■
+
+2. Ordered List (<ol>)
+-Displays items with numbers or letters.
+-Used when sequence/order is important.
+
+Syntax:
+<ol type="I">
+  <li>First</li>
+  <li>Second</li>
+</ol>
+
+-type values:
+  -"1" – 1, 2, 3
+  -"I" – I, II, III
+  -"i" – i, ii, iii
+  -"A" – A, B, C
+  -"a" – a, b, c
+
+3. Description List (<dl>)
+-Used for terms and definitions (key-value style).
+-Great for:
+  -FAQs
+  -Dictionary entries
+  -Question-answer formatting
+
+Syntax:
+<dl>
+  <dt>HTML</dt>
+  <dd>A markup language for creating web pages.</dd>
+</dl>
+
+-<dt> = description term
+-<dd> = description definition
+
+🔸 Combining Ordered and Unordered Lists
+-You can nest lists for more detailed structure:
+<ol>
+  <li>Frontend
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </li>
+  <li>Backend</li>
+</ol>
+
+🔹 Tables in HTML
+Tables are used to store and display data in a row and column format, ideal for:
+  -Bills
+  -Marksheets
+  -Product Listings
+  -Shopping Carts
+
+🔸 Basic Table Tags
+<table border="1">
+  <tr>
+    <th>Item</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Pen</td>
+    <td>₹10</td>
+  </tr>
+</table>
+
+-<table> – the main table container
+-<tr> – table row
+-<th> – table header (bold and centered)
+-<td> – table data cell
+
+🔸 Attributes
+-border="1" – adds a visible border to the table
+
+🔸 Semantic Table Tags
+-Used to structure large tables semantically:
+<table>
+  <thead>
+    <tr><th>Product</th><th>Price</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Book</td><td>₹200</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td>Total</td><td>₹200</td></tr>
+  </tfoot>
+</table>
+
+-<thead> – header section
+-<tbody> – main body
+-<tfoot> – footer section
+
+🔸 Merging Cells
+-colspan – merges cells horizontally
+-rowspan – merges cells vertically
+
+syntax:
+<tr>
+  <td colspan="2">Merged Cell</td>
+</tr>
+
+<tr>
+  <td rowspan="2">Vertical Merge</td>
+  <td>Item A</td>
+</tr>
+<tr>
+  <td>Item B</td>
+</tr>

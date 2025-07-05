@@ -1,0 +1,196 @@
+            DATE :- 2 July 2025
+
+🔶 Forms in HTML
+HTML forms are used to collect input/data from the user.
+Common examples include:
+
+-Registration Form
+-Login Form
+-Contact Us
+-Feedback Form
+-Surveys
+
+🔸 Basic Syntax:
+<form action="submit_page.php" method="POST">
+  <!-- Input fields go here -->
+</form>
+
+🔶 Input Fields (<input>)
+
+🔸 Syntax:
+<input type="value">
+
+🔸 Common type Values:
+| Type       | Description                          |
+| ---------- | ------------------------------------ |
+| `text`     | Single-line plain text input         |
+| `email`    | Validates email input                |
+| `number`   | Allows numeric input only            |
+| `password` | Hides characters entered (dots)      |
+| `date`     | Date picker                          |
+| `checkbox` | Allows multiple selections           |
+| `radio`    | Allows single selection from options |
+| `file`     | Upload file                          |
+
+🔸 Example Fields:
+
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="you@example.com" required>
+<input type="number" placeholder="Phone Number">
+<input type="password" placeholder="Password">
+<input type="date">
+<input type="file">
+
+🔶 Label
+Used to name the input field, making it more accessible and user-friendly.
+
+🔸 Syntax:
+
+<label for="username">Username:</label>
+<input type="text" id="username">
+for in <label> should match the id of <input>.
+
+🔶 Form Attributes
+| Attribute | Description                                     |
+| --------- | ----------------------------------------------- |
+| `action`  | The URL or file where the form data is sent.    |
+| `method`  | `GET` or `POST` method used to submit the form. |
+
+🔸 Example:
+
+<form action="/submit" method="post">
+
+🔶 Placeholder
+Gives a hint inside the input box about what to enter.
+
+<input type="text" placeholder="Enter your name">
+
+🔶 Required
+Forces the user to fill the input before submitting.
+
+<input type="email" required>
+
+🔶 Buttons
+
+🔸 Submit Button:
+Used to submit the form.
+
+<button type="submit">Submit</button>
+
+🔸 Reset Button:
+Clears all the form inputs.
+
+<button type="reset">Reset</button>
+
+🔸 Button Attributes:
+
+| Attribute      | Description                             |
+| -------------- | --------------------------------------- |
+| `value`        | Predefined value of the button or input |
+| `disabled`     | Disables the input/button               |
+| `readonly`     | Makes input visible but not editable    |
+| `autocomplete` | Enables browser auto-fill (`on`/`off`)  |
+| `maxlength`    | Limits the number of characters         |
+| `pattern`      | Regex pattern for input validation      |
+
+
+🔸 Example:
+<input type="text" pattern="[A-Za-z]{3,}" maxlength="10">
+
+🔶 Textarea
+Used for multi-line text input (like comments or messages).
+
+🔸 Syntax:
+
+<textarea rows="4" cols="30" placeholder="Your message here..."></textarea>
+
+:- Full Example: Contact Form
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <form autocomplete="on" action="">
+        <h1>Registeration Form</h1>
+
+        <label for="id2">Username :-</label>
+        <input type="text" id="id2" maxlength="10" name="username" placeholder="Enter username" title="Fill your Username" required>
+        <br>
+        <br>
+        <label for="id3">E-mail :-</label>
+        <input type="email" id="id3" maxlength="" name="E-mail" placeholder="Enter E-mail" title="Fill your E-mail" requiree
+        >
+        <br>
+        <br>
+        <label for="id4">password :-</label>
+        <input type="password" id="id4" pattern="[A-Za-z]{3,}" name="password" min="0" max="9" placeholder="Enter password" title="must have 6 characters" required>
+        <br>
+        <br>
+        <label for="id5">Contact No. :-</label>
+        <input type="number" id="id5" name="contact no."  placeholder="Enter Phone Number" title="Fill your phone number">
+        <br>
+        <br>
+        <label for="id6">D.O.B :-</label>
+        <input type="date" id="id6" name="Enter Date"  max="2007-07-02"  placeholder="Enter date" title="Fill DOB">
+        <br>
+        <br>
+        <label for="id7"required>Subject</label>
+        <br>
+        <input type="checkbox" id="id7" name="Subject" value="OOPS">OOPS
+        <br>
+        <input type="checkbox" id="id7" name="Subject" value="PPS">PPS
+        <br>
+        <input type="checkbox" id="id7" name="Subject" value="Discrete Maths">Discrete Maths
+        <br>
+        <input type="checkbox" id="id7" name="Subject" value="CAM">CAM
+        <br>
+        <br>
+        <label for="id8"required>Branch</label>
+        <br>
+        <input type="radio" id="id8" name="Branch" value="B.Tech" title="select B.Tech">B.Tech
+        <br>
+        <input type="radio" id="id8" name="Branch" value="BCA" title="select BCA">BCA
+        <br>
+        <input type="radio" id="id8" name="Branch" value="B.Sc" title="select B.Sc">B.Sc
+        <br>
+        <input type="radio" id="id8" name="Branch" value="BBA" title="select BBA">BBA
+        <br>
+        <br>
+        <label for="id9"required>Section</label>
+        <br>
+        <input type="radio" id="id9" name="Section" value="A1" title="select A1">A1
+        <br>
+        <input type="radio" id="id9" name="Section" value="A2" title="select A2">A2
+        <br>
+        <input type="radio" id="id9" name="Section" value="B1" title="select B1">B1
+        <br>
+        <input type="radio" id="id9" name="Section" value="B2" title="select B2">B2
+        <br>
+        <input type="radio" id="id9" name="Section" value="C1" title="select A1">C1
+        <br>
+        <input type="radio" id="id9" name="Section" value="C2" title="select A2">C2
+        <br>
+        <input type="radio" id="id9" name="Section" value="D1" title="select B1">D1
+        <br>
+        <input type="radio" id="id9" name="Section" value="D2" title="select B2">D2
+        <br>
+        <br>
+        <label for="id10">Document</label><br>
+        <br>
+        <input type="file" id="id10" accept=".pdf, .jpeg, .docx" multiple required>
+        <br>
+        <br>
+        <label for="id11">Feedback :-</label>
+        <br>
+        <textarea type="feedback" id="id11" name="Feedback" placeholder="Enter your feedback here" title="fill feedback" required></textarea>
+        <br>
+        <br>
+        <button type="submit">Submit</button>  <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
