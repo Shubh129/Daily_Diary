@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us form With HTML , CSS</title>
+    <link rel="stylesheet" href="form_css.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 >Contact Us</h1>
+        </div>
+    </header>
+    <main>
+        <div>
+            <form action="" autocomplete="on" method="">
+                <!-- Full Name -->
+                <div>
+                    <label for="id1" class="head">Full Name<span style="color: red;">*</span> :- </label>
+                    <input type="text" id="id1" name="Full Name" placeholder="Enter Full Name" title="Fill Full Name here" required>
+                </div><br>
+                <!-- E-mail -->
+                <div>
+                    <label for="id12" class="head">E-mail Address<span style="color: red;">*</span> :- </label>
+                    <input type="email" id="id12" name="E-mail Address" placeholder="Enter E-mail" title="Fill E-mail here" required>
+                </div><br>
+                <!-- Phone Number -->
+                <div>
+                    <label for="id3" class="head">Phone Number <span style="color: grey;">(optional)</span> :- </label>
+                    <input type="number" id="id3" name="Phone Number" placeholder="Enter Phone Number" pattern="[0,9]{10}" title="Fill Phone Number here">
+                </div><br>
+                <!-- Your message -->
+                <div>
+                    <label for="id4" class="head">Your Message <span style="color: grey;">(optional)</span> :-</label>
+                    <textarea type="Message" id="id4" rows="1" cols="20" name="Your Message" maxlength="50" placeholder="Enter Your query" title="Fill your Message here"></textarea>
+                </div><br>
+                <!-- Location -->
+                <div>
+                    <label for="id5" class="head">Location<span style="color: red;">*</span> :-</label>
+                    <input type="text" id="id5" name="Location" placeholder="Enter Your Location" title="Fill your Location here" required>
+                </div><br>
+                <!-- Reason For Contact -->
+                <div>
+                    <label  title="Select the Reason" for="id6" class="head"required>Reason for Contact :-</label><br>
+                    <input type="checkbox" name="Reason for Contact" id="id6" value="Support" >Support <br>
+                    <input type="checkbox" name="Reason for Contact" id="id6" value="Sales Inquiry">Sales Inquiry <br>
+                    <input type="checkbox" name="Reason for Contact" id="id6" value="General Feedback">General Feedback <br>
+                    <input type="checkbox"  name="Reason for Contact" id="id6" value="Other">Other <input type="text" name="Reason for Contact" id="id6"><br>
+                </div><br>
+                <!-- Preferred Time to Contact -->
+                <div>
+                    <label for="id7" class="head" >Preferred Time to Contact<span style="color: red;">*</span> :- </label><br>
+                    <input type="radio" id="id7" aria-required="true" name="Preferred Time to Contact" required title="choose one" value="Morning(10:30am - 11:30am)">Morning(10:30am - 11:30am) <br>
+                    <input type="radio" id="id7" aria-required="true" name="Preferred Time to Contact" title="choose one" value="Afternoon(1:30pm - 2:30pm)">Afternoon(1:30pm - 2:30pm) <br>
+                    <input type="radio" id="id7" aria-required="true" name="Preferred Time to Contact" title="choose one" value="Evening(6:30pm - 7:30pm)">Evening(6:30pm - 7:30pm) <br>
+                </div><br>
+                <!-- Preferred Method of Contact -->
+                <div>
+                    <label for="method" class="head">Preferred Method of Contact<span style="color: red;">*</span> :-</label>
+                    <select name="Preferred Method of Contact" id="method" required>
+                        <option value="">-----Select Method-----</option>
+                        <option value="E-mail">E-mail</option>
+                        <option value="Phone">Phone</option>
+                        <option value="WhatsApp">WhatsApp</option>
+                    </select>
+                </div><br>
+                <!-- SUBMIT -->
+                <div>
+                    <button type="submit">SUBMIT</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>

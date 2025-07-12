@@ -1,0 +1,92 @@
+
+/* element */
+h1{
+    color:maroon;
+    background-color:rgb(252, 170, 170);
+    width: 490px;
+    height: 35px;
+    cursor: pointer;
+    padding-top: 50px;
+    padding-right: 2px;
+    padding-left: 20px;
+}
+button{
+    color: rgb(238, 238, 238);
+    background-color: green;
+}
+
+form{
+    width:500px;
+    height: 510px;
+    background-color: rgb(242, 239, 196);
+}
+
+button:hover{
+    
+    color: brown;
+
+}
+
+/* class */
+
+.head{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* id */
+
+#id1{
+    border-color: rgb(116, 203, 209);
+    cursor: pointer;
+}
+#id12{
+    border-color: rgb(116, 203, 209);
+    
+}
+#id3{
+    border-color: rgb(116, 203, 209);
+    
+}
+#id4{
+    border-color: rgb(116, 203, 209);
+    
+}
+#id5{
+    border-color: rgb(116, 203, 209);
+    
+}
+#id6{
+    border-color: rgb(116, 203, 209);
+    
+}
+#method{
+    border-color: rgb(116, 203, 209);
+    
+}
+
+/* hover */
+
+#id1:hover{ background-color: rgb(255, 244, 236);
+    
+
+}
+#id12:hover{ background-color:rgb(255, 244, 236);
+
+}
+#id3:hover{ background-color:rgb(255, 244, 236);
+
+}
+#id4:hover{ background-color:rgb(255, 244, 236);
+
+}
+#id5:hover{ background-color:rgb(255, 244, 236);
+
+}
+#id6:focus{ background-color:rgb(221, 147, 95);
+cursor: pointer;
+}
+#method:hover{ background-color:rgb(255, 244, 236);
+
+}
+
