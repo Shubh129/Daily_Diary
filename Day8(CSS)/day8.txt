@@ -1,0 +1,138 @@
+
+            DATE :- 5 June 2025
+
+
+CASCADING STYLE SHEETS (CSS):
+CSS stands for Cascading Style Sheets, and it is used to style and design web pages. While HTML structures the content of a page, CSS is responsible for making it visually appealing.
+
+-Designing using CSS
+With CSS, you can control almost every visual aspect of a website:
+-Align elements
+-Create layouts
+-Set colors
+-Choose fonts
+-Control spacing (margin/padding)
+-Make the site responsive for different devices
+
+Examples of What CSS Can Do:
+-Make a heading red
+→ h1 { color: red; }
+-Add space around a div
+→ div { margin: 20px; }
+-Set font size
+→ p { font-size: 16px; }
+
+Types of CSS:->
+1. Inline CSS
+CSS written inside the HTML element using the style attribute.
+Syntax:
+<p style="color: blue; font-size: 18px;">This is inline styled text.</p>
+
+-Useful for quick styling or single-use elements.
+-Not ideal for large-scale or consistent styling.
+
+2. Internal CSS
+CSS written inside the <style> tag within the <head> section of an HTML file.
+Syntax:
+<head>
+  <style>
+    p {
+      color: green;
+      font-family: Arial;
+    }
+  </style>
+</head>
+-Good for single-page websites or when quick changes are needed.
+-Doesn’t separate design from content.
+
+3. External CSS
+CSS is written in a separate .css file and linked to the HTML file using the <link> tag.
+
+📌 Syntax:
+In HTML:
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+In style.css:
+
+CSS:
+body {
+  background-color: #f0f0f0;
+}
+-Best practice for real websites.
+-Allows reuse across multiple HTML files and keeps code cleaner.
+
+Syntax of CSS:->
+Basic CSS Rule Structure:
+
+selector {
+  property: value;
+}
+Example:
+
+h1 {
+  color: red;
+  font-size: 24px;
+}
+selector → Targets the HTML element (like h1, p, div)
+property → What you want to change (like color)
+value → The value to assign (like blue, 16px)
+
+CSS Properties:->
+These are the most commonly used CSS properties:
+
+1) color
+Sets the text color.
+Example: color: red;
+
+2) background-color
+Sets the background color of the element.
+Example: background-color: lightblue;
+
+3) font-size
+Controls the size of the text.
+Example: font-size: 18px;
+
+4) font-family
+Sets the font style.
+Example: font-family: Arial, sans-serif;
+
+5) margin
+Creates space outside the element (around it).
+Example: margin: 20px;
+
+6) padding
+Creates space inside the element (between content and border).
+Example: padding: 10px;
+
+7) border
+Defines a border around the element.
+Example: border: 2px solid black;
+
+CSS Priority Order (Specificity):
+CSS follows a priority order to determine which rule takes effect when multiple rules apply:
+
+inline > internal > external
+
+Inline CSS overrides everything else
+Highest priority
+Internal CSS overrides external
+External CSS has the lowest priority
+
+Example:
+
+<p style="color: red;">Inline color</p> <!-- This will be red no matter what internal or external says -->
+Even if you have:
+
+CSS:
+p {
+  color: green;
+}
+The paragraph will still be red due to inline style.
+
+Summary Table:
+Type	Location	Use Case	Example
+Inline	In the element (style)	Quick, single-use styles	<h1 style="color:blue;">Hello</h1>
+Internal	<style> in <head>	Single-page style rules	head > style {}
+External	Separate .css file	Large/multi-page websites	link rel="stylesheet" href="..."
