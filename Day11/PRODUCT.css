@@ -1,0 +1,59 @@
+.product1{
+    background-color:rgb(255, 255, 255);
+    border: rgb(99, 147, 2);
+    border-style:solid;
+    width: 200px;
+    height: 370px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-left: 90px;
+    margin-top: 200px;
+    
+    
+}
+#description{
+    font-size: 15px;
+}
+#description:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+#buyButton{
+
+    border-radius: 0px;
+    border:none;
+    position: relative;
+    left: 16px;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(174, 242, 73);
+    
+}
+#add{
+    border:none;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(174, 242, 73);
+}
+#buyButton:hover{
+    background-color: rgb(5, 159, 255);
+    color: white;
+    cursor: pointer;
+
+}
+#add:hover{
+    background-color: rgb(5, 159, 255);
+    color: white;
+    cursor: pointer;
+}
+
+
+#picture{
+    border-radius:px;
+    border:rgb(228, 227, 227);
+    border-style: solid;
+    border-width: 0.000005px;
+}
