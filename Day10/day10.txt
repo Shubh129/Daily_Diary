@@ -1,0 +1,184 @@
+            DATE :- 8 June 2025
+
+
+CSS Colors & Fonts
+
+CSS COLORS:
+CSS offers several ways to define and apply color to elements, allowing you to control the look of text, backgrounds, borders, and more.
+
+1. Named Colors
+-CSS has 147 predefined named colors.
+-These are human-readable names like:
+red, blue, green, black, white, yellow, orange, gray, navy, aqua, lime, etc.
+
+Example:
+h1 {
+  color: red;
+}
+
+-Advantage: Easy to remember and write.
+-Limitation: Limited to predefined names.
+
+2. HEX Codes
+-HEX (Hexadecimal) values represent the intensity of Red, Green, and Blue (RGB).
+-Format: #RRGGBB, where each pair (RR, GG, BB) is a value from 00 to FF (0 to 255 in decimal).
+
+Syntax:
+selector {
+  color: #ff0000; /* Red */
+}
+
+Common HEX Examples:
+| Color | HEX Code  |
+| ----- | --------- |
+| White | `#ffffff` |
+| Black | `#000000` |
+| Red   | `#ff0000` |
+| Green | `#00ff00` |
+| Blue  | `#0000ff` |
+
+
+-Short HEX: If all pairs are the same, it can be shortened.
+#ffffff → #fff  
+#000000 → #000
+
+3. RGB Values
+-RGB stands for Red, Green, Blue.
+-Values range from 0 (none) to 255 (full intensity).
+-Offers precise control over color.
+
+Syntax:
+selector {
+  color: rgb(255, 0, 0); /* Red */
+}
+
+Short Hacks:
+| Color | RGB Value            |
+| ----- | -------------------- |
+| White | `rgb(255, 255, 255)` |
+| Black | `rgb(0, 0, 0)`       |
+
+
+-RGB is useful when fine-tuning color shades.
+
+4. RGBA (RGB + Alpha)
+-Adds transparency/opacity to RGB.
+-Alpha values range from 0.0 (fully transparent) to 1.0 (fully opaque).
+
+Syntax:
+selector {
+  background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+}
+
+-Useful for overlays, backgrounds, and design effects.
+
+-CSS Font Styling
+Font styling is essential for controlling the appearance of text and improving readability and aesthetics.
+
+font-family:
+-Specifies the font of the text.
+-Always list multiple fonts for fallback.
+-Fonts with spaces must be in quotes.
+
+Syntax:
+p {
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+-Good practice to end with a generic font family (serif, sans-serif, monospace).
+
+font-size:
+-Defines how big or small the text appears.
+-Units used:
+px: fixed pixel size
+em: relative to parent size
+rem: relative to root <html> font size
+%: relative to parent element
+
+Syntax:
+h1 {
+  font-size: 36px;
+}
+p {
+  font-size: 1.2em;
+}
+
+font-weight:
+-Determines how thick or thin the font is.
+
+Common Values:
+| Value     | Meaning                 |
+| --------- | ----------------------- |
+| `normal`  | Default thickness       |
+| `bold`    | Makes text bold         |
+| `lighter` | Lighter than normal     |
+| `100–900` | Numeric scale of weight |
+
+
+Syntax:
+strong {
+  font-weight: bold;
+}
+.light {
+  font-weight: 300;
+}
+
+font-style:
+-Used to make text italic or oblique.
+
+-Values:
+normal
+italic
+oblique
+
+Example:
+em {
+  font-style: italic;
+}
+
+Example (HTML + CSS):
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    h1 {
+      color: #ff4500;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    p {
+      color: rgb(60, 60, 60);
+      font-size: 18px;
+    }
+
+    .highlight {
+      background-color: rgba(255, 255, 0, 0.3);
+      font-weight: lighter;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Colors & Fonts Demo</h1>
+  <p>This paragraph uses default styles.</p>
+  <p class="highlight">This is a highlighted text using RGBA background and lighter font.</p>
+</body>
+</html>
+
+TABLE:
+| Feature     | Property           | Example                           |
+| ----------- | ------------------ | --------------------------------- |
+| Text Color  | `color`            | `color: red;`, `color: #fff;`     |
+| Background  | `background-color` | `background-color: rgb(0,0,0);`   |
+| Font Family | `font-family`      | `font-family: Arial, sans-serif;` |
+| Font Size   | `font-size`        | `font-size: 20px;`                |
+| Font Weight | `font-weight`      | `font-weight: bold;`              |
+| Font Style  | `font-style`       | `font-style: italic;`             |
