@@ -1,0 +1,135 @@
+            DATE :- 10 June 2025
+
+
+1. Z-INDEX & STACKING ORDER
+ -Definition:
+z-index controls the stacking order of elements along the Z-axis (depth), which means how elements appear in front of or behind other elements.
+
+ -Rules:
+Only works on positioned elements (position: relative, absolute, fixed, or sticky).
+Higher z-index = Closer to the viewer (appears on top).
+Lower z-index = Farther away (appears behind).
+
+ -Example:
+<div style="position: absolute; top: 50px; left: 50px; width: 100px; height: 100px; background-color: blue; z-index: 1;"></div>
+<div style="position: absolute; top: 70px; left: 70px; width: 100px; height: 100px; background-color: red; z-index: 2;"></div>
+<div style="position: absolute; top: 90px; left: 90px; width: 20px; height: 20px; background-color: black; z-index: 3;"></div>
+
+->Red appears on top of blue.
+->Pen (black) appears on top of both.
+
+* Always use z-index wisely in layers like modals, tooltips, menus, etc.
+
+2. BORDER
+ -Definition:
+The border property creates a visible line around an element. It is commonly used to:
+->Separate sections
+->Highlight focus
+->Design cards or buttons
+
+Syntax:
+border: [width] [style] [color];
+
+Or use individually:
+
+border-width: 2px;
+border-style: solid;
+border-color: red;
+
+ -Example:
+<div style="border: 2px dashed green; padding: 10px;">
+    This box has a dashed green border.
+</div>
+
+Rounded Corners:
+Use border-radius:
+border-radius: 10px;
+
+ -Example:
+<div style="border: 2px solid blue; border-radius: 15px; padding: 10px;">
+    Rounded corner box.
+</div>
+
+* Use border-radius on cards, buttons, inputs for modern UI look.
+
+3. BOX-SHADOW
+ -Definition:
+Adds shadow effect to boxes. Creates depth, looks like an element is elevated.
+
+ -Syntax:
+box-shadow: h-offset v-offset blur-radius spread-radius color inset;
+
+->h-offset: Horizontal shadow position (+ = right, - = left)
+->v-offset: Vertical shadow position (+ = down, - = up)
+->blur-radius: How soft/blurred the shadow is (0 = sharp)
+->spread-radius: Size of the shadow
+->color: Color of the shadow
+->inset: Optional; creates inner shadow
+
+ -Example:
+<div style="width: 100px; height: 100px; background-color: white; box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);">Shadowed Box</div>
+
+* Use box-shadow to improve card depth, hover effects, or make buttons pop.
+
+4. BACKGROUND
+Used to style background of elements:
+ -Includes color, images, size, repeat behavior, position, etc.
+
+ -background-color
+Sets the background color.
+
+background-color: lightblue;
+
+ -background-image
+Used to insert an image as background.
+background-image: url("image.jpg");
+
+-background-repeat
+Controls repetition of background image:
+->repeat: repeats both X and Y
+->repeat-x: repeats horizontally
+->repeat-y: repeats vertically
+->no-repeat: doesn’t repeat
+
+background-repeat: no-repeat;
+
+ -background-position
+Defines starting point of the background image.
+ -Examples:
+background-position: center;
+background-position: top right;
+
+ -background-attachment
+Controls scroll behavior of background image:
+
+->scroll: default, scrolls with page
+->fixed: stays in place while page scrolls
+->local: scrolls with the element content
+
+Example:
+background-attachment: fixed;
+
+ -background-size
+Controls scaling of background image.
+
+->cover: cover the whole box
+->contain: fit inside box
+->100px 200px: custom size
+
+Example:
+background-size: cover;
+
+ -Example:
+<div style="
+    width: 300px;
+    height: 200px;
+    background-image: url('nature.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border: 2px solid black;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+">Content here
+</div>
