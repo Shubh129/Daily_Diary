@@ -1,4 +1,4 @@
-            DATE :- 9 June 2025
+            DATE :- 9 July 2025
 
 CSS Box Model:
 In web development, every HTML element on a webpage is considered as a rectangular box using the CSS Box Model. This model describes how the size of elements is calculated and how different layers—such as content, padding, border, and margin—interact with one another. At the core of this model is the content, which is the actual data such as text, image, or input field. Around this content, several optional layers can be applied to control spacing and layout behavior.
