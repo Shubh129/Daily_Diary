@@ -1,0 +1,120 @@
+            DATE :- 4 July 2025
+
+
+ -TYPES OF TAGS IN HTML:
+HTML tags are mainly classified into:
+
+->Block-level elements
+->Inline elements
+
+1. BLOCK-LEVEL ELEMENTS
+ -Definition:
+Block-level elements take up the full width available and always start on a new line.
+
+ -Properties:
+Occupy full width of the container.
+Start on a new line.
+Can contain other block-level and inline elements.
+Commonly used to structure layout and sections.
+
+ -Examples:
+| Tag         | Description                  |
+| ----------- | ---------------------------- |
+| `<div>`     | Generic container            |
+| `<p>`       | Paragraph                    |
+| `<h1>`      | Heading (also h2 to h6)      |
+| `<section>` | Thematic section             |
+| `<header>`  | Header section of a page     |
+| `<footer>`  | Footer section of a page     |
+| `<article>` | Self-contained content block |
+
+
+ -Example Code:
+<div>
+  <h1>Welcome</h1>
+  <p>This is a paragraph inside a block-level div.</p>
+</div>
+
+2. INLINE ELEMENTS
+ -Definition:
+Inline elements do not start on a new line and only take up as much width as needed.
+
+Properties:
+-Sit within a line, next to other inline elements.
+-Do not break the flow of text.
+-Can only contain text or other inline elements.
+-Commonly used for formatting parts of text.
+
+ -Examples:
+| Tag        | Description              |
+| ---------- | ------------------------ |
+| `<b>`      | Bold text                |
+| `<i>`      | Italic text              |
+| `<strong>` | Important text (bold)    |
+| `<em>`     | Emphasized text (italic) |
+| `<span>`   | Generic inline container |
+| `<a>`      | Anchor / link            |
+| `<img>`    | Image                    |
+
+ -Example Code:
+<p>This is a <b>bold</b> and <i>italic</i> word inside a sentence.</p>
+
+ -SPECIAL TAGS
+-> <div> Tag
+A block-level element used for grouping and structuring content.
+
+ -Use Cases:
+->Layout building
+->Grouping multiple elements
+->Styling sections using CSS
+->Interacting with JavaScript
+
+ -Example:
+<div style="background-color: lightgray; padding: 10px;">
+  <h2>About Us</h2>
+  <p>We are a web development team.</p>
+</div>
+
+-> <span> Tag
+An inline element used to style small chunks of text.
+
+ -Use Cases:
+->Apply CSS styles to part of a sentence
+->Use with JavaScript for dynamic changes
+->Highlighting, coloring, or formatting text
+
+ -Example:
+<p>This is <span style="color: red;">important</span> text.</p>
+
+ -STRUCTURE TAGS TO KNOW
+These are also block-level elements used for semantic layout:
+
+| Tag         | Purpose                                   |
+| ----------- | ----------------------------------------- |
+| `<header>`  | Top of a section or page                  |
+| `<footer>`  | Bottom area, usually copyright, links     |
+| `<section>` | Logical grouping of related content       |
+| `<article>` | Independent piece of content              |
+| `<main>`    | Main content of the page (unique content) |
+
+Example:
+<header>
+  <h1>Website Title</h1>
+</header>
+
+<section>
+  <h2>About</h2>
+  <p>This is the about section.</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Your Name</p>
+</footer>
+
+Summary Table
+| Tag Type        | Block-Level Elements                | Inline Elements               |
+| --------------- | ----------------------------------- | ----------------------------- |
+| Starts New Line |   Yes                               |   No                          |
+| Full Width      |   Yes                               |   No (width based on content) |
+| Can Contain     | Other block and inline elements     | Only inline elements or text  |
+| Common Tags     | `<div>`, `<p>`, `<h1>`, `<section>` | `<span>`, `<b>`, `<i>`, `<a>` |
