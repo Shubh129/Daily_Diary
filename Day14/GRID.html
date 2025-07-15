@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-display{
+            display: grid;
+            grid-template: 150px 150px/250px 250px 250px;
+            gap: 10px;
+            position: relative;
+            font-size: 19px;
+
+        }
+        .grid{
+            padding-top: 40px;
+            border-radius: 10px;
+            border: 2px solid black;
+            background-color: rgb(238, 229, 216);
+            /* grid-template-columns: 300px 300px 300px; */
+        }
+        .img{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 75px;
+            bottom: 30px;
+            border-radius: 10px;
+            border: 1px solid peru;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-display">
+        <div class="grid"><img class="img" src="image11.webp" alt="">Headphones</div>
+        <div class="grid"><img class="img" src="image12.webp" alt="">Keyboard</div>
+        <div class="grid"><img class="img" src="image13.webp" alt="">Study Table</div>
+        <div class="grid"><img class="img" src="image14.webp" alt="">Bean Bag</div>
+        <div class="grid"><img class="img" src="image15.jpg" alt="">Chair</div>
+        <div class="grid"><img class="img" src="image16.jpg" alt="">Frother</div>
+    </div>
+</body>
+</html>
