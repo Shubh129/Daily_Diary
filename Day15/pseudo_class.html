@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:blanchedalmond;
+        }
+        .nav-bar{
+            border: 0px solid white;
+            background-color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+        .nav{
+            padding-right: 50px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .nav:hover{
+            color: purple;
+            font-size: 25px;
+        }
+        .input:hover{
+            background-color:rgb(255, 255, 159);
+        }
+        .button{
+            color: black;
+            background-color: chartreuse;
+            border: none;
+        }
+        h1::before{
+            content: "🔥";
+
+        }
+        li:nth-child(even){
+            background-color: rgb(140, 140, 228);
+        }
+        li:nth-child(odd){
+            background-color:aquamarine;
+        }
+        h2:after{
+            content: " OF Language";
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="nav-bar">
+            <a href="#" class="nav">Home</a>
+            <a href="#" class="nav">Categories</a>
+            <a href="#" class="nav">About Us</a>
+            <a href="#" class="nav">Help</a>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div>
+            <form action="">
+                <h1>FORM</h1>
+                <div>
+                    <label for="id1" class="">Name :- </label>
+                    <input type="text" class="input" placeholder="Enter your Name" id="id1" class="">
+                </div>
+                <br>
+                <div>
+                    <label for="id2" class="">Contact :- </label>
+                    <input type="number" class="input" placeholder="Enter phone no." id="id2" class="">
+                </div>
+                <br>
+                <div>
+                    <label for="id3" class="">E-mail :- </label>
+                    <input type="email" class="input" placeholder="Enter your E-mail" id="id3" class="">
+                </div>
+                <br>
+                <div>
+                    <label for="id4" class="">Reason :- </label>
+                    <input type="text" class="input" placeholder="Enter Reason" id="id4" class="">
+                </div>
+                <br>
+                <div>
+                    <label for="id5" class="">Feedback :- </label>
+                    <textarea type="feedback" class="input" placeholder="Give your Feedback" id="id5"></textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="button">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ol>
+                <h2>LIST</h2>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>C++</li>
+            </ol>
+        </div>
+    </footer>
+</body>
+</html>

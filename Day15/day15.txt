@@ -1,0 +1,135 @@
+            DATE :- 14 July 2025
+
+
+
+ -Pseudo-classes in CSS
+Q. What is a Pseudo-class?
+A pseudo-class is used to define the special state of an element — for example, when a user hovers over a button or when a field is focused.
+
+ -Syntax:
+
+selector:pseudo-class {
+    property: value;
+}
+
+ -Common Pseudo-classes:
+| Pseudo-class   | Description                                                  |
+| -------------- | ------------------------------------------------------------ |
+| `:hover`       | Applies styles when the user hovers over an element          |
+| `:active`      | Applies when the element is active (e.g., button is clicked) |
+| `:focus`       | Applies when an element (like an input) gets focus           |
+| `:nth-child()` | Selects elements based on their order inside a parent        |
+
+
+  :nth-child() usage:
+->Select even or odd elements:
+li:nth-child(even) { background-color: #f0f0f0; }
+li:nth-child(odd)  { background-color: #e0e0e0; }
+
+Using a formula:
+li:nth-child(3n+1) {
+    color: red; /* Selects 1st, 4th, 7th, etc. */
+}
+li:nth-child(2n+1) {
+    font-weight: bold; /* Selects 1st, 3rd, 5th, etc. */
+}
+
+ -Pseudo-elements in CSS
+Q. What is a Pseudo-element?
+A pseudo-element allows you to style specific parts of an element, like the first letter, or add content before/after an element without modifying HTML.
+
+ -Syntax:
+selector::pseudo-element {
+    property: value;
+}
+
+ -Common Pseudo-elements:
+| Pseudo-element   | Description                            |
+| ---------------- | -------------------------------------- |
+| `::before`       | Inserts content **before** the element |
+| `::after`        | Inserts content **after** the element  |
+| `::first-letter` | Styles the first letter of the text    |
+| `::first-line`   | Styles the first line of text          |
+
+
+ -Example:
+
+h1::before {
+    content: "★ ";
+    color: gold;
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: blue;
+}
+
+ -CSS Transition
+Q. What is a Transition?
+A transition allows property changes in CSS to occur smoothly over a period of time.
+
+ -Syntax:
+selector {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+ -Example: Toy Car Color Change
+HTML
+<div class="car"></div>
+<button onclick="document.querySelector('.car').classList.toggle('go')">Press</button>
+
+CSS
+.car {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    transition: background-color 1s ease;
+}
+
+.car.go {
+    background-color: green;
+}
+
+When the button is clicked, .car gets the class go, and the color changes smoothly from red to green in 1 second.
+
+ -CSS Animation
+Q. What is an Animation?
+An animation allows you to create more complex motion like moving, rotating, fading, etc., using keyframes.
+
+ -Syntax:
+selector {
+    animation-name: animationName;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+ -Example: Moving Car Animation
+@keyframes moveCar {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
+
+.car {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    animation: moveCar 3s linear infinite alternate;
+}
+
+ -Transition vs Animation:
+| Feature | Transition                              | Animation                               |
+| ------- | --------------------------------------- | --------------------------------------- |
+| Control | Limited to one state change             | Allows multiple steps with `@keyframes` |
+| Timing  | Single time period                      | Complex timing and loops                |
+| Trigger | Usually triggered by user (e.g., hover) | Can start automatically or on class     |
+| Syntax  | Short and simple                        | Requires keyframes and more properties  |
