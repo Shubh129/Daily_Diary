@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            position: absolute;
+            left: 580px;
+            top: 400px;
+        }
+        .s1{
+            margin: 100px;
+            animation: spin 0.9s ease-in-out infinite;
+            background-color: purple;
+            text-align: center;
+             margin-top: 300px;
+            margin-left: 600px;
+            height: 60px;
+            width: 60px;
+        }
+
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(180deg);background-color:burlywood;border-radius: 100%;
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="square s1"></div>
+    <div><h1>Loading...</h1></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            position: absolute;
+            left: 890px;
+            top: 270px;
+        }
+         .s2{
+            animation: moves 2s ease-in-out infinite;
+            transform: scale(1.6,2);
+            background-color: purple;
+            margin-top: 250px;
+            margin-left: 500px;
+            margin-bottom:100px ;
+            height: 20px;
+            width: 40px;
+        }
+        .emptysquare{
+            border: 2px solid black;
+            height: 20px;
+            width: 188px;
+            position: absolute;
+            top: 249px;
+            left: 857px;
+        }
+        @keyframes moves {
+            0%{
+                transform: translate(350px,0px);
+            }
+            50%{
+                transform: translate(500px,0px);
+            }
+            100%{
+                transform: translate(350px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="square s2"></div>
+    <div class="emptysquare"></div>
+    <div><h1>Loading</h1></div>
+    </div>
+</body>
+</html>
+        
+       
